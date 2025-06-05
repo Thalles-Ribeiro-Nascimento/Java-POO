@@ -1,15 +1,11 @@
 package nascimento.thalles.src.classes;
 
 public class Triangulo {
+
     private double a;
     private double b;
     private double c;
 
-//    public Triangulo(double la, double lb, double lc){
-//        this.a = la;
-//        this.b = lb;
-//        this.c = lc;
-//    }
 
     public double getA() {
         return a;
