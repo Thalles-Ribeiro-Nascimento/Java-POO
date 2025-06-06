@@ -1,5 +1,7 @@
 package nascimento.thalles.src.entities;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Produto {
     private String name;
     private double price;
@@ -42,6 +44,17 @@ public class Produto {
     public void rmProduto(int quantidade){
         this.quantity -= quantidade;
         // this.quantity = this.quantity - quantidade;
+    }
+
+    public String toString(){
+        return "Produto: "
+                + this.getName()
+                + ", $ "
+                + String.format("%.2f", this.getPrice())
+                + ", "
+                + this.getQuantity()
+                + " units, Total: $ "
+                + String.format("%.2f", this.valorTotalEmEstoque());
     }
 
 }

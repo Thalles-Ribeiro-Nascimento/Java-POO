@@ -28,36 +28,13 @@ public class MainProduct {
         tv.setPrice(preco);
         tv.setQuantity(quantidade);
 
-        System.out.println(
-                "Nome: " + tv.getName() +
-                         ", $" + tv.getPrice() +
-                         ", " + tv.getQuantity() +
-                         " units, Total: $" + tv.valorTotalEmEstoque()
-        );
+        System.out.println(tv);
 
-        System.out.print("Entre com mais produtos no estoque: ");
-        int produtosEstoque = sc.nextInt();
-        tv.addProduto(produtosEstoque);
+        System.out.print("Entre com mais quantidades no Estoque: ");
+        int quantity = sc.nextInt();
+        tv.addProduto(quantity);
 
-        System.out.println(
-                "Update stock"
-                        + tv.getName() +
-                        ", $" + tv.getPrice() +
-                        ", " + tv.getQuantity() +
-                        " units, Total: $" + tv.valorTotalEmEstoque()
-        );
-
-        System.out.print("Retire produtos do estoque: ");
-        int rmProduto = sc.nextInt();
-        tv.rmProduto(rmProduto);
-
-        System.out.println(
-                "Update stock"
-                        + tv.getName() +
-                        ", $" + tv.getPrice() +
-                        ", " + tv.getQuantity() +
-                        " units, Total: $" + tv.valorTotalEmEstoque()
-        );
+        System.out.println(tv);
 
 
         sc.close();
