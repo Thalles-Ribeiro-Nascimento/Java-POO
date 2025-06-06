@@ -1,6 +1,6 @@
 package nascimento.thalles.src.application;
 
-import nascimento.thalles.src.classes.Triangulo;
+import nascimento.thalles.src.entities.Triangulo;
 
 import java.util.Locale;
 import java.util.Scanner;

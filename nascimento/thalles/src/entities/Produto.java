@@ -1,4 +1,4 @@
-package nascimento.thalles.src.classes;
+package nascimento.thalles.src.entities;
 
 public class Produto {
     private String name;

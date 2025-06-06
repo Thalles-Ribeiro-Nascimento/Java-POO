@@ -1,6 +1,6 @@
 package nascimento.thalles.src.application;
 
-import nascimento.thalles.src.classes.Produto;
+import nascimento.thalles.src.entities.Produto;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -16,7 +16,7 @@ public class MainProduct {
         System.out.println("Entre com o produto: ");
 
         System.out.print("Nome: ");
-        String nome = sc.next();
+        String nome = sc.nextLine();
 
         System.out.print("Preço: ");
         double preco = sc.nextDouble();
@@ -28,12 +28,10 @@ public class MainProduct {
         tv.setPrice(preco);
         tv.setQuantity(quantidade);
 
-//        double totalEstoque = tv.valorTotalEmEstoque();
-
         System.out.println(
                 "Nome: " + tv.getName() +
                          ", $" + tv.getPrice() +
-                         "," + tv.getQuantity() +
+                         ", " + tv.getQuantity() +
                          " units, Total: $" + tv.valorTotalEmEstoque()
         );
 
@@ -61,10 +59,8 @@ public class MainProduct {
                         " units, Total: $" + tv.valorTotalEmEstoque()
         );
 
+
         sc.close();
-
     }
-
-
 
 }
