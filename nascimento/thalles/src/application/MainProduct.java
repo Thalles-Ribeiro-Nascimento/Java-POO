@@ -35,8 +35,6 @@ public class MainProduct {
         tv.addProduto(quantity);
 
         System.out.println(tv);
-
-
         sc.close();
     }
 
