@@ -52,14 +52,12 @@ public class Ex03_Student {
 
     @Override
     public String toString(){
-        float notaMinima = 60.0f;
         float notaFinalAluno = this.notaFinal();
-        float diferenca = notaMinima - notaFinalAluno;
-
-        if(notaFinalAluno >= notaMinima){
+        if(notaFinalAluno >= 60){
             return String.format("Final Grade: %.2f%n" + "PASS", notaFinalAluno);
         }
         else{
+            float diferenca = 60 - notaFinalAluno;
             return String.format("Final Grade: %.2f%n" + "FAILED%n" + "Missing %.2f Points", notaFinalAluno, diferenca);
         }
     }

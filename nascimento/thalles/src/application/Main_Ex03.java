@@ -18,7 +18,7 @@ public class Main_Ex03 {
 
         Ex03_Student student = new Ex03_Student();
         student.setName("Alex Green");
-        student.setNota1(30.0f);
+        student.setNota1(20.0f);
         student.setNota2(30.0f);
         student.setNota3(0.0f);
 
