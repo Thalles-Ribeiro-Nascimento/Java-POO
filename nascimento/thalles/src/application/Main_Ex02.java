@@ -9,13 +9,11 @@ projetada abaixo.
 */
 
 import nascimento.thalles.src.entities.Ex02_Employee;
-
 import java.util.Locale;
 
 public class Main_Ex02 {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
-
         Ex02_Employee employee = new Ex02_Employee();
         employee.setName("Thalles Nascimento");
         employee.setSalary(6000.00);
@@ -25,7 +23,6 @@ public class Main_Ex02 {
 
         employee.incrementSalary(10.0f);
         System.out.println(employee);
-
 
     }
 
