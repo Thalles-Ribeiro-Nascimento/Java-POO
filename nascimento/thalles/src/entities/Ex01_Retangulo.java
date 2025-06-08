@@ -14,9 +14,6 @@ Diagonal: d = √(b² + h²), onde 'b' é a base e 'h' é a altura, utilizando o
 public class Ex01_Retangulo {
     private double height;
     private double width;
-    private double a;
-    private double p;
-    private double d;
 
     public double getHeight() {
         return height;
@@ -35,25 +32,29 @@ public class Ex01_Retangulo {
     }
 
     public double areaRetangle(){
-        this.a = this.height * this.width;
-        return this.a;
+        return this.height * this.width;
     }
 
     public double perimeterRetangle(){
-        this.p = 2 * (this.width + this.height);
-        return this.p;
+        return 2 * (this.width + this.height);
     }
 
     public double diagonalRetangle(){
-        this.d = Math.sqrt(Math.pow(this.width, 2) + Math.pow(this.height, 2));
-        return this.d;
+        return Math.sqrt(Math.pow(this.width, 2) + Math.pow(this.height, 2));
     }
 
     public String toString(){
         return String.format(
                 "Base: %.2f%n" +
-                "Altura: %.2f%n",
+                "Altura: %.2f%n" +
+                "Área: %.2f%n" +
+                "Perimetro: %.2f%n" +
+                "Diagonal: %.2f",
                 this.getWidth(),
-                this.getHeight());
+                this.getHeight(),
+                this.areaRetangle(),
+                this.perimeterRetangle(),
+                this.diagonalRetangle()
+        );
     }
 }

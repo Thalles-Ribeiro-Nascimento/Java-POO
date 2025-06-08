@@ -19,12 +19,7 @@ public class Main_Ex01 {
         retangulo.setWidth(3.00);
         retangulo.setHeight(4.00);
 
-        double a = retangulo.areaRetangle();
-        double p = retangulo.perimeterRetangle();
-        double d = retangulo.diagonalRetangle();
-
         System.out.println(retangulo);
-        System.out.printf("Área: %.2f%n" + "Perimetro: %.2f%n" + "Diagonal: %.2f%n", a, p, d);
 
     }
 }
