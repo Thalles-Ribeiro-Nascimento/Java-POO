@@ -32,8 +32,7 @@ public class Produto {
     }
 
     public double valorTotalEmEstoque(){
-        double valorTotal = this.price * this.quantity;
-        return valorTotal;
+        return this.price * this.quantity;
     }
 
     public void addProduto(int quantidade){
@@ -47,14 +46,16 @@ public class Produto {
     }
 
     public String toString(){
-        return "Produto: "
-                + this.getName()
-                + ", $ "
-                + String.format("%.2f", this.getPrice())
-                + ", "
-                + this.getQuantity()
-                + " units, Total: $ "
-                + String.format("%.2f", this.valorTotalEmEstoque());
+        return String.format("Produto: %s%n" +
+                        "Preço: $%.2f%n" +
+                        "Quantidade: %d%n" +
+                        "Valor Total em estoque: $%.2f%n",
+                this.getName(),
+                this.getPrice(),
+                this.getQuantity(),
+                this.valorTotalEmEstoque()
+        );
+
     }
 
 }

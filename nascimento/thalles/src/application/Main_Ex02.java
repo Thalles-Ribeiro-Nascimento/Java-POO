@@ -22,6 +22,7 @@ public class Main_Ex02 {
         System.out.println(employee);
 
         employee.incrementSalary(10.0f);
+
         System.out.println(employee);
 
     }

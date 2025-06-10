@@ -41,13 +41,16 @@ public class Ex02_Employee {
         return this.salary - this.tax;
     }
 
-    public double incrementSalary(float perc){
+    public void incrementSalary(float perc){
         double incremento = (this.salary * perc) / 100;
         this.salary += incremento;
-        return this.salary;
     }
 
     public String toString(){
-        return String.format("Funcionário: %s%n" + "Salário Líquido: %.2f", this.getName(), this.salaryLiquid());
+        return String.format("Funcionário: %s%n" +
+                "Salário Líquido: %.2f",
+                this.getName(),
+                this.salaryLiquid()
+        );
     }
 }
