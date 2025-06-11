@@ -7,26 +7,33 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class MainRefatoring {
+    public static void listarProdutos(ArrayList<Produto> produtos){
+        System.out.println("Produtos: ");
+        System.out.println(produtos);
+    }
+
+//    public static
+
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-
-
+        int option;
         ArrayList<Produto> produto = new ArrayList<>();
 
         System.out.println("Selecione uma das opções: ");
-        System.out.printf(
-                "1 - Adicionar Produto%n" +
-                "2 - Excluir produto%n" +
-                "3 - Listar produtos%n" +
-                "4 - Listar 1 produto%n" +
-                "5 - Encerrar programa%n" +
-                        "Opção: "
-        );
-        int option = sc.nextInt();
 
         do{
+            System.out.printf(
+                    "1 - Adicionar Produto%n" +
+                    "2 - Excluir produto%n" +
+                    "3 - Listar produtos%n" +
+                    "4 - Listar 1 produto%n" +
+                    "5 - Encerrar programa%n" +
+                    "Opção: "
+            );
+            option = sc.nextInt();
+
             switch (option){
                 case 1:
                     System.out.println("Quantos produtos deseja armazenar? ");
@@ -58,20 +65,18 @@ public class MainRefatoring {
                     System.out.println("Produto excluído!");
                     break;
                 case 3:
-                    System.out.print("Produtos: " + produto);
+                    listarProdutos(produto);
                     break;
                 case 4:
                     System.out.print("Fale o produto que deseja: ");
                     int index = sc.nextInt();
-                    System.out.print("Produto: " + produto.get(index));
+                    System.out.println(produto.get(index));
                     break;
             }
         }while (option != 5); {
             sc.close();
 
         }
-
-
 
     }
 }

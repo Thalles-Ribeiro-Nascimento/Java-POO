@@ -46,7 +46,7 @@ public class Produto {
     }
 
     public String toString(){
-        return String.format("Produto: %s%n" +
+        return String.format("%nProduto: %s%n" +
                         "Preço: $%.2f%n" +
                         "Quantidade: %d%n" +
                         "Valor Total em estoque: $%.2f%n",
