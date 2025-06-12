@@ -1,6 +1,6 @@
 package nascimento.thalles.src.application;
 
-import nascimento.thalles.src.entities.ProblemaEstatico;
+import nascimento.thalles.src.util.ProblemaEstatico;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -10,17 +10,21 @@ public class MainProblemaEstatico {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Entre com o raio: ");
-        double raio = sc.nextDouble();
+        System.out.print("Entre com o Raio: ");
+        double radius = sc.nextDouble();
+
+        double circum = ProblemaEstatico.calculaCircum(radius);
+        double volume = ProblemaEstatico.calculoVolume(radius);
+        double pi = ProblemaEstatico.PI;
 
         System.out.printf("Raio: %.2f%n" +
                 "Circunferência: %.2f%n" +
                 "Volume: %.2f%n" +
                 "PI: %.2f",
-                raio,
-                ProblemaEstatico.calculaCircum(raio),
-                ProblemaEstatico.calculoVolume(raio),
-                ProblemaEstatico.pi
+                radius,
+                circum,
+                volume,
+                pi
         );
 
 
