@@ -1,4 +1,4 @@
-package nascimento.thalles.src.entities;
+package nascimento.thalles.src.util;
 
 // Classe utilitária
 public class AreaTriangle {

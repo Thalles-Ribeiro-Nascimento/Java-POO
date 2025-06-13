@@ -25,8 +25,8 @@ public class MainTriangle {
         y.setB(sc.nextDouble());
         y.setC(sc.nextDouble());
 
-        double areaX = x.calculoArea();
-        double areaY = y.calculoArea();
+        double areaX = x.calcularArea();
+        double areaY = y.calcularArea();
 
         if (areaX > areaY){
             largeArea = "X";

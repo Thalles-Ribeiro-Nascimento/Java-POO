@@ -1,6 +1,6 @@
 package nascimento.thalles.src.application;
 
-import nascimento.thalles.src.entities.AreaTriangle;
+import nascimento.thalles.src.util.AreaTriangle;
 
 public class MainTriangleStatic {
     public static void main(String[] args) {
